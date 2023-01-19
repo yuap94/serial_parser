@@ -1,2 +1,2 @@
 # serial_parser
-A script to read serial input with logs
+A template to read serial input and decode with `utf-8`
