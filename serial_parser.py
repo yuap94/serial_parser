@@ -22,7 +22,11 @@ if __name__ == '__main__':
 
 	args = parser.parse_args()
 
-	logfile = args.path + "/" + args.output_file
+	if len(args.path) > 0:
+		logfile = args.path + "/" + args.output_file
+	else:
+		logfile = args.output_file
+	
 	port = args.port
 	br = args.baudrate
 	rate = args.rate
